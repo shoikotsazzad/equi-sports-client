@@ -7,12 +7,14 @@ import {
 } from "react-router-dom";
 
 import router from './Route/router.jsx';
+import { Toaster } from 'sonner';
 
 
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <StrictMode> 
+     <Toaster richColors position="top-right"/>
     <RouterProvider router={router} />
   </StrictMode>,
 )

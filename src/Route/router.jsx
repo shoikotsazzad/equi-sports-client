@@ -21,6 +21,7 @@ const router = createBrowserRouter([
         {
             path: "/sportsequipment",
             element: <SportsEquipment></SportsEquipment>,
+            loader: () => fetch('http://localhost:4000/sports')
         },
       ]
     },
@@ -37,8 +38,9 @@ const router = createBrowserRouter([
       element: <AddSportsEquipment></AddSportsEquipment>,
     },
     {
-      path: "/updatesportsequipment",
+      path: "/updatesportsequipment/:id",
       element: <UpdateSportsEquipment></UpdateSportsEquipment>,
+      loader: ({params}) => fetch(`http://localhost:4000/sports/${params.id}`),
     },
     
   ]);

@@ -20,7 +20,7 @@ const AddSportsEquipment = () => {
             price,
             rating,
             stock,
-            photo
+            photo,
         };
 
         console.log(newEquipment);
@@ -39,7 +39,7 @@ const AddSportsEquipment = () => {
             if(data.insertedId){
                 Swal.fire({
                     title: 'Success!!!',
-                    text: 'User added successfully',
+                    text: 'Product added successfully',
                     icon: 'success',
                     confirmButtonText: 'Ok'
                   })
@@ -48,7 +48,7 @@ const AddSportsEquipment = () => {
     }
     return (
         <div className="bg-[#9eaf80] p-24 ">
-            <h1 className="text-3xl font-extrabold text-center md:p-14">Add Sports Equipment Page</h1>
+            <h1 className="md:text-5xl md:font-extrabold text-center md:p-14">Add Sports Equipment</h1>
             <form onSubmit={handleAddSportsEquipment}>
                 {/* Item and Category form row */}
                 <div className="md:flex md:gap-4 md:mb-8">
