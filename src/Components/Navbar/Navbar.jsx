@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header style={styles.header}>
       {/* Logo */}
-      <Link to="/" style={styles.logo}>MyApp</Link>
+      <Link to="/" style={styles.logo}>SportsEquip</Link>
 
       {/* Navigation Links */}
       <nav style={styles.nav}>

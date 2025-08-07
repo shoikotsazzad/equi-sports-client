@@ -4,7 +4,8 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Auth/Login";
 import Registration from "../Pages/Auth/Registration";
 import SportsEquipment from "../Pages/SportsEquipment/SportsEquipment";
-import Footer from "../Components/Footer/Footer";
+import AddSportsEquipment from "../Pages/AddSportsEquipment/AddSportsEquipment";
+import UpdateSportsEquipment from "../Pages/UpdateSportsEquipment/UpdateSportsEquipment";
 
 
 
@@ -21,8 +22,6 @@ const router = createBrowserRouter([
             path: "/sportsequipment",
             element: <SportsEquipment></SportsEquipment>,
         },
-        
-
       ]
     },
     {
@@ -32,7 +31,15 @@ const router = createBrowserRouter([
     {
         path:"/registration",
         element: <Registration></Registration>
-    }
+    },
+    {
+      path: "/addsportsequipment",
+      element: <AddSportsEquipment></AddSportsEquipment>,
+    },
+    {
+      path: "/updatesportsequipment",
+      element: <UpdateSportsEquipment></UpdateSportsEquipment>,
+    },
     
   ]);
   export default router;
