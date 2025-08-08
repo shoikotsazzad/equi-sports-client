@@ -6,6 +6,7 @@ import Registration from "../Pages/Auth/Registration";
 import SportsEquipment from "../Pages/SportsEquipment/SportsEquipment";
 import AddSportsEquipment from "../Pages/AddSportsEquipment/AddSportsEquipment";
 import UpdateSportsEquipment from "../Pages/UpdateSportsEquipment/UpdateSportsEquipment";
+import Users from "../Pages/Users/Users";
 
 
 
@@ -31,7 +32,12 @@ const router = createBrowserRouter([
     },
     {
         path:"/registration",
-        element: <Registration></Registration>
+        element: <Registration></Registration>,
+    },
+    {
+      path: "/users",
+      element: <Users></Users>,
+      loader: () => fetch('http://localhost:4000/users')
     },
     {
       path: "/addsportsequipment",
