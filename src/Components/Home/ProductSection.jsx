@@ -6,7 +6,7 @@ const ProductSection = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://localhost:4000/sports')
+    fetch('https://equi-sports-server-zeta.vercel.app/sports')
       .then(res => res.json())
       .then(data => {
         setProducts(data.slice(0, 6))

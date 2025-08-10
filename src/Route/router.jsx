@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         {
             path: "/sportsequipment",
             element: <SportsEquipment></SportsEquipment>,
-            loader: () => fetch('http://localhost:4000/sports')
+            loader: () => fetch('https://equi-sports-server-zeta.vercel.app/sports')
         },
       ]
     },
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     {
       path: "/users",
       element: <Users></Users>,
-      loader: () => fetch('http://localhost:4000/users')
+      loader: () => fetch('https://equi-sports-server-zeta.vercel.app/users')
     },
     {
       path: "/addsportsequipment",
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
     {
       path: "/updatesportsequipment/:id",
       element: <UpdateSportsEquipment></UpdateSportsEquipment>,
-      loader: ({params}) => fetch(`http://localhost:4000/sports/${params.id}`),
+      loader: ({params}) => fetch(`https://equi-sports-server-zeta.vercel.app/sports/${params.id}`),
     },
     
   ]);

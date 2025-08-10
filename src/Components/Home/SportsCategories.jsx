@@ -23,7 +23,7 @@ const SportsCategories = () => {
       id: 3,
       name: 'Team Sports',
       description: 'Football, basketball, soccer equipment',
-      image: 'https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+      image: 'https://i.ibb.co/k6rCkXQJ/photo-1612872087720-bb876e2e67d1.jpg',
       link: '/sportsequipment',
       itemCount: '180+ items'
     },
@@ -31,7 +31,7 @@ const SportsCategories = () => {
       id: 4,
       name: 'Water Sports',
       description: 'Swimming, surfing, and water activities',
-      image: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+      image: 'https://i.ibb.co/21rBRFRm/photo-1617939533073-6c94c709370c.jpg',
       link: '/sportsequipment',
       itemCount: '120+ items'
     },
@@ -47,7 +47,7 @@ const SportsCategories = () => {
       id: 6,
       name: 'Accessories',
       description: 'Bags, bottles, and sports accessories',
-      image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+      image: 'https://i.ibb.co/Txx51Pc0/photo-1703694741127-64f46e544971.jpg',
       link: '/sportsequipment',
       itemCount: '250+ items'
     }

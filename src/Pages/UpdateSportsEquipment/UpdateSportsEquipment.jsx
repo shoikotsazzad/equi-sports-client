@@ -40,7 +40,7 @@ const UpdateSportsEquipment = () => {
             console.log(updatedEquipment);
     
             // send this data to the backend or API
-            fetch(`http://localhost:4000/sports/${_id}`,{
+            fetch(`https://equi-sports-server-zeta.vercel.app/sports/${_id}`,{
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

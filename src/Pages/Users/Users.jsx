@@ -19,7 +19,7 @@ const Users = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:4000/users/${id}`, {
+                fetch(`https://equi-sports-server-zeta.vercel.app/users/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

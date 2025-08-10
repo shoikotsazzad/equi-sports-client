@@ -21,7 +21,7 @@ const Registration = () => {
                 const lastSignInTime = result?.user?.metadata?.lastSignInTime;
                 const loginInfo = {email, lastSignInTime};
 
-                fetch(`http://localhost:4000/users`, {
+                fetch(`https://equi-sports-server-zeta.vercel.app/users`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ const Registration = () => {
                 const newUser = { name, email, createdAt };
 
                 // save new input data to the database
-                fetch('http://localhost:4000/users', {
+                fetch('https://equi-sports-server-zeta.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

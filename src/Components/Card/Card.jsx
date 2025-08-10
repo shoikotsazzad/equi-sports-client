@@ -57,7 +57,7 @@ const Card = ({ equipment, equipments, setEquipments }) => {
       }
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:4000/sports/${_id}`, {
+        fetch(`https://equi-sports-server-zeta.vercel.app/sports/${_id}`, {
           method: 'DELETE',
         })
           .then(res => res.json())
