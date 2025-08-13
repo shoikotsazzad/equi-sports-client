@@ -14,7 +14,7 @@ const SportsEquipment = () => {
 
   // Get unique categories
   const categories = useMemo(() => {
-    const cats = ['all', ...new Set(equipments.map(eq => eq.category?.toLowerCase()).filter(Boolean))];
+    const cats = ['all', ...new Set(equipments?.map(eq => eq.category?.toLowerCase()).filter(Boolean))];
     return cats;
   }, [equipments]);
 
@@ -141,7 +141,7 @@ const SportsEquipment = () => {
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 style={styles.filterSelect}
               >
-                {categories.map(category => (
+                {categories?.map(category => (
                   <option key={category} value={category}>
                     {category === 'all' ? 'All Categories' : 
                      category.charAt(0).toUpperCase() + category.slice(1)}
@@ -232,7 +232,7 @@ const SportsEquipment = () => {
               ? 'repeat(auto-fit, minmax(380px, 1fr))'
               : '1fr'
           }}>
-            {filteredEquipments.map((equipment, index) => (
+            {filteredEquipments?.map((equipment, index) => (
               <div
                 key={equipment._id}
                 style={{
