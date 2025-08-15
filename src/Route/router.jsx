@@ -7,6 +7,7 @@ import SportsEquipment from "../Pages/SportsEquipment/SportsEquipment";
 import AddSportsEquipment from "../Pages/AddSportsEquipment/AddSportsEquipment";
 import UpdateSportsEquipment from "../Pages/UpdateSportsEquipment/UpdateSportsEquipment";
 import Users from "../Pages/Users/Users";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
 
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       element: <UpdateSportsEquipment></UpdateSportsEquipment>,
       loader: ({params}) => fetch(`https://equi-sports-server-zeta.vercel.app/sports/${params.id}`),
     },
+    {
+      path:"/dashboard",
+      element: <Dashboard></Dashboard>,
+    }
     
   ]);
   export default router;

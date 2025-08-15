@@ -42,7 +42,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" style={styles.logo}>
           <span style={styles.logoText}>Sports</span>
-          <span style={styles.logoAccent}>Equip</span>
+          <span style={styles.logoAccent}>Equipment</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -60,7 +60,7 @@ export default function Navbar() {
             </button>
           ) : (
             <Link to="/login" style={styles.loginButton}>
-              Login <span style={styles.buttonIcon}>🔑</span>
+              SignIn <span style={styles.buttonIcon}>🔑</span>
             </Link>
           )}
         </div>
@@ -92,7 +92,7 @@ export default function Navbar() {
             </button>
           ) : (
             <Link to="/login" style={styles.mobileLoginButton} onClick={() => setIsMobileMenuOpen(false)}>
-              Login
+              SignIn
             </Link>
           )}
         </div>

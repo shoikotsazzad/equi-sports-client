@@ -85,7 +85,7 @@ const Registration = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            <div className="form-control mt-6">
+                            <div to='/login' className="form-control mt-6">
                                 <button className="btn btn-primary">Registration</button>
                             </div>
                         </form>

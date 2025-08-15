@@ -44,7 +44,7 @@ const Login = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            <div className="form-control mt-6">
+                            <div to='/dashboard' className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
                             <div>
@@ -53,12 +53,7 @@ const Login = () => {
                                     <button className='btn btn-active btn-accent '>Registration</button>
                                 </Link>
                             </div>
-                            <div>
-                                <h1 className='md:mt-6 md:mb-2'>Do you want to see all the users?</h1>
-                                <Link to="/users">
-                                    <button className='btn btn-info'>Users</button>
-                                </Link>
-                            </div>
+                            
                         </form>
                     </div>
                 </div>
